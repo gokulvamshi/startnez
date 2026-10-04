@@ -22,7 +22,7 @@ Unlike LinkedIn—which is geared toward corporate recruitment, resumes, and sta
 
 ---
 
-## 🎨 UI/UX Design System Specification (Stitch MCP ID: `4094096787748632413`)
+## 🎨 UI/UX Design System Specification
 
 The application follows the **DevMatch Modern / HackConnect Matchmaker Hub** design language:
 - **Color Palette:**
