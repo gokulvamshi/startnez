@@ -1,0 +1,27 @@
+{
+  "name": "hackconnect-backend",
+  "version": "1.0.0",
+  "description": "HackConnect Production REST API Server with Supabase Integration",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node ../supabase/migrate.js",
+    "migrate:dry-run": "node ../supabase/migrate.js --dry-run",
+    "migrate:seed": "node ../supabase/migrate.js --seed-only"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.23.1",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  }
+}

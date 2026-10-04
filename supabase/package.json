@@ -1,0 +1,17 @@
+{
+  "name": "hackconnect-supabase",
+  "version": "1.0.0",
+  "description": "HackConnect Supabase migrations and schema management",
+  "main": "migrate.js",
+  "scripts": {
+    "migrate": "node migrate.js",
+    "migrate:dry-run": "node migrate.js --dry-run",
+    "migrate:seed": "node migrate.js --seed-only",
+    "migrate:schema": "node migrate.js --schema-only"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  }
+}
