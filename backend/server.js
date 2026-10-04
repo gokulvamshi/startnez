@@ -1,4 +1,18 @@
 require('dotenv').config();
+
+// Polyfill WebSocket for Node < 22 environments (e.g., Supabase Realtime client)
+try {
+  const WebSocket = require('ws');
+  if (typeof globalThis.WebSocket === 'undefined') {
+    globalThis.WebSocket = WebSocket;
+  }
+  if (typeof global.WebSocket === 'undefined') {
+    global.WebSocket = WebSocket;
+  }
+} catch (e) {
+  // ws package not available or native WebSocket exists
+}
+
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
